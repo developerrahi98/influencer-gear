@@ -11,6 +11,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.hide{
+    display: none;
+}
+#hide{
+    display: none;
+}
 
 .section-title {
     font-weight: 700;
@@ -39,7 +45,12 @@ body {
     align-items: center;
     margin: 87px 120px 50px;
 }
-
+.header .fa-bars{
+    display: none;
+}
+.header .fa-cart-shopping{
+    display: none;
+}
 .nav-bar ul {
     display: flex;
     gap: 34px;
@@ -189,7 +200,6 @@ body {
 ------------------------*/
 .feature-section {
     width: 1110px;
-    height: 270px;
     margin: 186px 165px 100px;
     display: flex;
     gap: 96px;
@@ -240,4 +250,89 @@ body {
 .footer-details .footer-icons li a{
     text-decoration: none;
     color: #D9DBE1;
+}
+
+/*------------------------
+   Meadia Query Styles 
+--------------------------*/
+
+/*------------------------
+   Mobile Device Styles 
+--------------------------*/
+
+@media screen and (max-width:576px){
+    .header{
+        margin: 0px;
+        margin-top: 40px;
+       justify-content: space-around;
+    }
+    .header-title{
+        margin: 0px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+   .header .fa-bars{
+        display: inline-block;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header .fa-cart-shopping{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .journey-section{
+        margin: 0px;
+        flex-direction: column-reverse;
+    }
+    .journey-image{
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    .journey-image img{
+        margin-top: 70px;
+        width: 100%;
+    }
+    .journey-details{
+        text-align: center;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .sponsors{
+        margin: 0px;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .collections-section{
+        margin: 0px;
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        width: 370px;
+    }
+    .feature-section{
+        margin: 0px;
+        flex-direction: column-reverse;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto ;
+        margin-bottom: 20px;
+    }
+    .feature-description{
+        text-align: center;
+    }
+    .feature-image img{
+        width:100%;
+    }
 }
